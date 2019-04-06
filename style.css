@@ -19,12 +19,17 @@ body{
 .aflTop50{
     width: 50%;
     margin: auto;
-    overflow: hidden;
-    position: relative;
+    
+}
+
+.aflTop50 h1{
+    font-size: 2em;
 }
 
 .playerRankings{
     width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .pic{
@@ -64,28 +69,31 @@ body{
 .playerDisplay{
     position: absolute;
     top:0;
-    left: -790;
-    width: 706px;
-    height: 525px;
+    left: -820;
+    width: 95.5%;
+    height: 94%;
     transition: 1.5s;
-    padding: 3%;
+    padding: 2%;
     background-color: white;
     border: black solid 1px;
 
 }
 
-/* .playerDisplay img{
-    position: relative;
-    top: 10;
-    left: 10;
-} */
+.playerDisplay img{
+    width: 70%;
+    height: auto;
+}
 
 #playerText{
     float: right;
-    width: 20%;
+    width: 27%;
 }
 
-.aflTop50:hover .playerDisplay{
+#playerText button{
+    float: right;
+}
+
+.playerRankings:hover .playerDisplay{
     left: 0;
     transition: 1.5s;
 }

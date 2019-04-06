@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: grey;
+}
+
+.container{
+    width: 84%;
+    height: 100vh;
+    margin: auto;
+    background-color: white;
+    padding: 3%
+}
+
+.aflTop50{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.playerRankings{
+    width: 100%;
+}
+
+.pic{
+    width: 100%;
+    height: auto;
+}
+
+.one{
+   width: 50%;
+   float: left
+}
+
+.twoFiveCont{
+    width: 50%;
+    float: right;
+}
+
+.twoFive{
+   width: 50%;
+   float: left;
+}
+
+.sixTenCont{
+    width: 100%;
+    float: left;
+}
+
+.sixTen{
+   width: 20%;
+   float: left;
+}
+.elevenTwenty{
+   width: 10%;
+   float: left;
+}
+
+.playerDisplay{
+    position: absolute;
+    top:0;
+    left: -790;
+    width: 706px;
+    height: 525px;
+    transition: 1.5s;
+    padding: 3%;
+    background-color: white;
+    border: black solid 1px;
+
+}
+
+/* .playerDisplay img{
+    position: relative;
+    top: 10;
+    left: 10;
+} */
+
+#playerText{
+    float: right;
+    width: 20%;
+}
+
+.aflTop50:hover .playerDisplay{
+    left: 0;
+    transition: 1.5s;
+}

@@ -4,66 +4,65 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: grey;
-}
+
 
 .container{
-    width: 84%;
+    width: 100%;
     height: 100vh;
-    margin: auto;
-    background-color: white;
-    padding: 3%
+    
 }
 
 .aflTop50{
-    width: 50%;
+    width: 80%;
     margin: auto;
     
 }
 
 .aflTop50 h1{
     font-size: 2em;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 .playerRankings{
     width: 100%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .pic{
     width: 100%;
     height: auto;
+    
 }
 
 .one{
-   width: 50%;
-   float: left
+width: 50%;
 }
 
 .twoFiveCont{
-    width: 50%;
-    float: right;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .twoFive{
-   width: 50%;
-   float: left;
+width: 50%;
 }
 
 .sixTenCont{
-    width: 100%;
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .sixTen{
-   width: 20%;
-   float: left;
+width: 50%;
+/* float: left; */
 }
 .elevenTwenty{
-   width: 10%;
-   float: left;
+width: 50%;
+/* float: left; */
 }
 
 .playerDisplay{
@@ -96,4 +95,117 @@ body{
 .playerRankings:hover .playerDisplay{
     left: 0;
     transition: 1.5s;
+}
+
+#name{ 
+    font-size: 1em;
+}
+
+#team{
+    font-size: 0.8em;
+}
+
+#bio{
+    font-size: 0.7em;
+}
+
+/*View for tablets*/
+@media (min-width:479px) {}
+
+/*View for desktop*/
+@media (min-width:1000px) {
+
+    body{
+        background-color: grey;
+    }
+
+    .container{
+        width: 84%;
+        height: 100vh;
+        margin: auto;
+        background-color: white;
+        padding: 3%
+    }
+
+    .aflTop50{
+        width: 50%;
+        margin: auto;
+        
+    }
+
+    .aflTop50 h1{
+        font-size: 2em;
+    }
+
+    .playerRankings{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .pic{
+        width: 100%;
+        height: auto;
+    }
+
+    .one{
+    width: 50%;
+    float: left
+    }
+
+    .twoFiveCont{
+        width: 50%;
+        float: right;
+    }
+
+    .twoFive{
+    width: 50%;
+    float: left;
+    }
+
+    .sixTenCont{
+        width: 100%;
+        float: left;
+    }
+
+    .sixTen{
+    width: 20%;
+    float: left;
+    }
+    .elevenTwenty{
+    width: 10%;
+    float: left;
+    }
+
+    .playerDisplay{
+        position: absolute;
+        top:0;
+        left: -820;
+        width: 95.5%;
+        height: 94%;
+        transition: 1.5s;
+        padding: 2%;
+        background-color: white;
+        border: black solid 1px;
+
+    }
+
+    .playerDisplay img{
+        width: 70%;
+        height: auto;
+    }
+
+    #playerText{
+        float: right;
+        width: 27%;
+    }
+
+    #playerText button{
+        float: right;
+    }
+
+    .playerRankings:hover .playerDisplay{
+        left: 0;
+        transition: 1.5s;
+    }
 }

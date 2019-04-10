@@ -44,6 +44,14 @@
     transform: translate(-50%, -50%);
     color: blue;
     font-size: 4rem;
+    transition: 1.5s ease-in-out;
+    -webkit-transition: 1.5s ease-in-out;
+}
+
+.pictext:hover{
+    font-size: 7rem;
+    transition: font-size 1.5s ease-in-out;
+    -webkit-transition: font-size 1.5s ease-in-out;
 }
 
 .pic{
@@ -71,20 +79,26 @@ width: 50%;
 width: 50%;
 }
 
-.playerDisplay{
+#playerDisplay{
     position: absolute;
     top:0;
     left: -820;
     width: 95.5%;
     height: 94%;
-    transition: 1.5s;
+    -webkit-transition: left 1.5s;
+    transition: left 1.5s;
     padding: 2%;
     background-color: white;
     border: black solid 1px;
-
 }
 
-.playerDisplay img{
+.showPlayerDisplay{
+    left: 0;
+    transition: left 1.5s;
+    -webkit-transition: left 1.5s;
+}
+
+#playerDisplay img{
     width: 70%;
     height: auto;
 }
@@ -98,10 +112,12 @@ width: 50%;
     float: right;
 }
 
-.playerRankings:hover .playerDisplay{
+
+
+/* .playerRankings:hover #playerDisplay{
     left: 0;
     transition: 1.5s;
-}
+} */
 
 #name{ 
     font-size: 1em;
@@ -167,9 +183,17 @@ width: 50%;
 
     .picText{
         font-size: inherit;
+        transition: font-size 0.5.s ease-in-out;
+        -webkit-transition: font-size 0.5.s ease-in-out;
     }
 
-    .playerDisplay{
+    .pictext:hover{
+        font-size: larger;
+        transition: font-size 0.5s ease-in-out;
+        -webkit-transition: font-size 0.5s ease-in-out;
+    }
+
+    #playerDisplay{
         position: absolute;
         top:0;
         left: -820;
@@ -182,7 +206,7 @@ width: 50%;
 
     }
 
-    .playerDisplay img{
+    #playerDisplay img{
         width: 70%;
         height: auto;
     }

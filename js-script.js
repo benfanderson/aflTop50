@@ -72,8 +72,13 @@ window.onload= function() {
             document.getElementById("name").innerHTML = players[i].name;
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
+            if(window.matchMedia("(max-width: 479px)").matches) {
+
+                if (window.pageYOffset > 80) {
+                    document.getElementById("playerDisplay").style.top=pageYOffset-82;
+                }
+            }
             document.getElementById("playerDisplay").style.left=0;
-            
         });  
 
         pics[i].addEventListener("mouseover", function(){

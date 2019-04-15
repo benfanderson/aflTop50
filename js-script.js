@@ -73,9 +73,12 @@ window.onload= function() {
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
             if(window.matchMedia("(max-width: 479px)").matches) {
+                let headline = document.getElementById("headline");
+                let headlineOffset = headline.offsetHeight;
+                headlineOffset += parseInt(window.getComputedStyle(headline).getPropertyValue('margin-bottom'));
 
-                if (window.pageYOffset > 80) {
-                    document.getElementById("playerDisplay").style.top=pageYOffset-82;
+                if (window.pageYOffset > headlineOffset) {
+                    document.getElementById("playerDisplay").style.top=pageYOffset-headlineOffset;
                 }
             }
             document.getElementById("playerDisplay").style.left=0;

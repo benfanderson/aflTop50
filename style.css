@@ -18,7 +18,7 @@
     
 }
 
-.aflTop50 h1{
+#headline{
     font-size: 2em;
     margin-bottom: 3%;
     text-align: center;
@@ -156,12 +156,12 @@ width: 50%;
         
     }
 
-    .aflTop50 h1{
-        font-size: 2em;
+    #headline{
+        font-size: 3em;
     }
 
     .one{
-        width: 49.999%;
+        width: 50%;
         font-size: 8rem;
     }
 

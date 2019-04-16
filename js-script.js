@@ -59,6 +59,36 @@ window.onload= function() {
             name:"Brodie Grundy",
             team:"Collingwood",
             bio:"Tied with Steele Sidebottom for the Copeland Trophy as the Magpies best and fairest winner in a grand final year. He is now 24 years old and is probably the nearest thing we have seen to Dean Cox since Cox himself. He averaged 20 disposals per game in 2018, took the ball inside fifty three times a game, laid five tackles a game, won five clearances for himself per game and kicked nine goals. He had 20 or more disposals in 15 of 26 games, peaking at 33 in round four against Adelaide. West Coast’s ability to limit him to 10 disposals in the grand final was a key to their premiership."
+        },
+        {
+            rank:11,
+            name:"Clayton Oliver",
+            team: "Melbounrne",
+            bio: "You might want to put a bullet next to this bloke’s name as he could be considerably higher next year. Finished second in Melbourne’s best and fairest behind Max Gawn and you can safely assume to see Gawn’s name further up the ladder here. He did everything you expect gun midfielders to do in 2018. He averaged 29 disposals per game, won about 16 of them in contests, laid six tackles a match and won 6.5 clearances. He kicked 12 goals and he did all of this in his third AFL season in the year he turned 21. Wow."
+        },
+        {
+            rank:12,
+            name:"Jack Riewoldt",
+            team:"Richmond",
+            bio:"Kicked 70 goals in 2018 to take his career tally past 600. Riewoldt has dipped below 50 goals just once in nine seasons and that was in 2016 when the Tigers won only eight games and he still managed 48. The 70 goals don’t do justice to the season he had. He was the Tigers’ sole tall target much of the time and had to either mark it or get it on the deck for the crumbers to get to work. The five goals he kicked against in a pummelling from West Coast in Perth were evidence of what a great player he has become."
+        },
+        {
+            rank:13,
+            name:"Phil Davis",
+            team:"GWS",
+            bio:"He has been the primary power defender in a team that has played finals in each of the past three seasons. The modern defender often gets a lot of help from teammates, but the Giants regularly trade on Davis’ ability to cope one-on-one and isolated with the likes of Lance Franklin, Josh Kennedy and others. He is a great body player. He has that knack most great defenders have of being able to keep the forward off balance without conceding free kicks. He won 41 free kicks last year and conceded less than one per game."
+        },
+        {
+            rank:14,
+            name:"Elliot Yeo",
+            team: "West Coast",
+            bio:"You are going all right when you win your second club best and fairest in a premiership year. I think all of the Eagles’ midfielders are underrated, but Yeo perhaps most of all. He averaged 25 disposals per game in 2018, kicking 14 goals, laying seven tackles a match and winning 12 contested possessions. He can play midfield or half-back, kicks well off either foot and can be used in attacking or defensive midfield roles. Is often the one sent to quell the likes of Nat Fyfe, Dustin Martin, Dangerfield and Toby Greene."
+        },
+        {
+            rank:15,
+            name:"Rory Sloane",
+            team:"Adelaide",
+            bio:"Injury cut his season in half in 2018 and trimmed his output by about the same percentage. But when he did play the Crows defied an otherwise bleak season to win seven of 12 games. A heart-and-soul midfielder who was still winning a powerful 13 contested possessions and six clearances per game, even in a season pulled apart by injury. He handles the pressure of being the club’s primary midfielder in the post-Patrick Dangerfield era very well and at his best he hits the scoreboard as well."
         }
     ]
 
@@ -68,7 +98,7 @@ window.onload= function() {
 
     for (let i = 0; i< pics.length; i++) {
         pics[i].addEventListener("click", function() {
-            document.getElementById("rank").innerHTML = players[i].rank;
+            document.getElementById("rank").innerHTML = players[i].rank+". ";
             document.getElementById("name").innerHTML = players[i].name;
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;

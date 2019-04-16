@@ -49,17 +49,9 @@
     pointer-events: none;
 }
 
-/* .pictext:hover{
-    font-size: 7rem;
-    transition: font-size 1.5s ease-in-out;
-    -webkit-transition: font-size 1.5s ease-in-out;
-} */
-
 .pic{
    width:100%; 
 }
-
-
 
 .one{
 width: 50%;
@@ -69,8 +61,6 @@ width: 50%;
 .twoFive{
     width: 50%;
 }
-
-
 
 .sixTen{
 width: 50%;
@@ -85,7 +75,7 @@ width: 50%;
     top:0;
     left: -820;
     width: 95.5%;
-    height: 94%;
+    /* height: 40%; */
     -webkit-transition: left 1.5s;
     transition: left 1.5s;
     padding: 2%;
@@ -100,36 +90,43 @@ width: 50%;
 }
 
 #playerDisplay img{
-    width: 70%;
+    width: 100%;
     height: auto;
+    clear: both;
+    margin-bottom: 1%;
 }
 
 #playerText{
-    float: right;
-    width: 27%;
+    
+    width: 100%;
 }
 
-#playerText button{
-    float: right;
+#closeButton{
+    display: block;
+    position: relative;
+    left: 95%;
+    background-color: lightgray;
+    margin-bottom: 3%;
+    /* width: 5% */
+    /* float: right; */
 }
 
-
-
-/* .playerRankings:hover #playerDisplay{
-    left: 0;
-    transition: 1.5s;
-} */
-
-#name{ 
-    font-size: 1em;
+ #rank {
+    font-size: 1.7em;
+    font-weight: bold;
+ }
+ 
+ #name{ 
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
 #team{
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
 
 #bio{
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 /*View for tablets*/

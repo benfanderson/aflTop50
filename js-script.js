@@ -104,11 +104,16 @@ window.onload= function() {
             document.getElementById("bio").innerHTML = players[i].bio;
 
             //Ensures playeDisplay panel slides in at top of viewheight in smartphone mode
-            let headline = document.getElementById("headline");
-            let headlineOffset = headline.offsetHeight;
-            headlineOffset += parseInt(window.getComputedStyle(headline).getPropertyValue('margin-bottom'));
-            if(window.matchMedia("(max-width: 479px)").matches && window.pageYOffset > headlineOffset) {
-                document.getElementById("playerDisplay").style.top=pageYOffset-headlineOffset;
+            
+            if(window.matchMedia("(max-width: 479px)")){
+                let headline = document.getElementById("headline");
+                let headlineOffset = headline.offsetHeight;
+                headlineOffset += parseInt(window.getComputedStyle(headline).getPropertyValue('margin-bottom'));
+                if(window.pageYOffset>headlineOffset){
+                    document.getElementById("playerDisplay").style.top=pageYOffset-headlineOffset;
+                } else {
+                    document.getElementById("playerDisplay").style.top=0;
+                }
             }
 
             document.getElementById("playerDisplay").style.left=0;

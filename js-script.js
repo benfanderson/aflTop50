@@ -89,6 +89,36 @@ window.onload= function() {
             name:"Rory Sloane",
             team:"Adelaide",
             bio:"Injury cut his season in half in 2018 and trimmed his output by about the same percentage. But when he did play the Crows defied an otherwise bleak season to win seven of 12 games. A heart-and-soul midfielder who was still winning a powerful 13 contested possessions and six clearances per game, even in a season pulled apart by injury. He handles the pressure of being the club’s primary midfielder in the post-Patrick Dangerfield era very well and at his best he hits the scoreboard as well."
+        },
+        {
+            rank:16,
+            name: "Steele Sidebottom",
+            team: "Collingwood",
+            bio:"Has been a quality player for a long time, but his 2018 was something else again, sharing the Copeland Trophy as the Magpies’ best and fairest with ruckman Brodie Grundy. He averaged 29 disposals per game and in a three-match finals run had 27, 31 and 41 disposals to see his team into the decider. He finds the football in contests, but you want him on the outside where his elite run and ball use hurts the most. Mark Hutchings’ job on him in the grand final was a key to West Coast’s premiership."
+        },
+        {
+            rank:17,
+            name: "Josh Kennedy",
+            team:"West Coast",
+            bio:"Had his 2018 season shortened by injury and the fact he is injured again at the start of this year at the age of 31 is a concern. But if you are to recognise excellence over time in a position, then he has to be on this list and nearer the top than the bottom. Played 14 games in 2018 and West Coast won 13 of them. He kicked goals in every game he played and dipped below two goals just once, with three or more in nine of his 14 appearances. Always gives an option, always makes a contest and kicks two goals with every three shots. A money man."
+        },
+        {
+            rank:18,
+            name:"Robbie Gray",
+            team:"Port Adelaide",
+            bio:"In the absence of Cyril Rioli, Gray is probably the best player of his type in the AFL. He played a mixture of forward and midfield in 2018, but still managed to kick 36 goals and tally more than 21 touches each week. It is not just the number, but the nature of his deeds that set him apart. There are split-second deft gives to teammates and wonderful link-up clearances with Paddy Ryder. Port need another big year from the 30-year-old if they are to get anywhere near the top eight."
+        },
+        {
+            rank:19,
+            name:"Dayne Beams",
+            team: "Collingwood",
+            bio:"As big a gain as Lachie Neale is to Brisbane, Beams is an even bigger loss and it will be interesting to see if the Lions can improve from underneath enough to offset that loss. He is a massive gain for Collingwood. Finished second in Brisbane’s club champion award last year after he averaged 29 disposals, including 11 per game in contests, and kicking 18 goals. Very strong in the contest and highly skilled when he gets the ball on the outside. His skill set was recognised by the umpires, who gave him 18 votes in the Brownlow."
+        },
+        {
+            rank:20,
+            name:"Shaun Higgins",
+            team:"North Melbourne",
+            bio:"Has been a good player for a long time, but had a career-best season to win trth Melbourne’s best and fairest. He averaged 27 disposals, 10 contested possessions, six inside 50s and five clearances per game, kicking 14 goals and polling 15 Brownlow Medal votes. If Ben Cunnington is a key on the inside, Robbie Tarrant the plank to their defence and Ben Brown a focal point in attack, then Higgins gives them the run and silk that links it all up."
         }
     ]
 

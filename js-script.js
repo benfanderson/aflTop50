@@ -149,13 +149,17 @@ window.onload= function() {
             document.getElementById("playerDisplay").style.left=0;
         });  
 
-        pics[i].addEventListener("mouseover", function(){
-            this.nextElementSibling.style.fontSize="150%";
-        });
+        if(window.matchMedia("(min-width: 1000px)").matches) {
+            pics[i].addEventListener("mouseover", function(){
+                this.nextElementSibling.style.fontSize="150%";
+            });
+    
+            pics[i].addEventListener("mouseout", function(){
+                this.nextElementSibling.style.fontSize="100%";
+            });
+        }
 
-        pics[i].addEventListener("mouseout", function(){
-            this.nextElementSibling.style.fontSize="100%";
-        });
+        
     }
 
     let closeButton = document.getElementById("closeButton");

@@ -69,12 +69,13 @@ width: 50%;
     position: absolute;
     top:0;
     left: -820;
-    width: 95.5%;
+    width: 96%;
     -webkit-transition: left 1.5s;
     transition: left 1.5s;
     padding: 2%;
-    background-color: white;
-    border: black solid 1px;
+    background-color: #a8d0e6;
+    color: rgb(46, 44, 44);
+    /* border: black solid 1px; */
 }
 
 .showPlayerDisplay{
@@ -169,24 +170,14 @@ width: 50%;
     }
 
     #playerDisplay{
-        /* position: absolute; */
-        /* top:0;
-        left: -820;
-        width: 95.5%;
-        height: 94%;
-        transition: 1.5s;
-        padding: 2%;
-        background-color: white;
-        border: black solid 1px; */
         height: 425px;
-
     }
 
     #playerDisplay img{
         position: absolute;
         top: 2%;
         width: 64%;
-        height: 94%;
+        height: 91%;
         object-fit: cover;
         margin-bottom: 0;
     }
@@ -214,7 +205,7 @@ width: 50%;
     }
 
     #bio{
-        font-size: 0.8em;
+        font-size: 0.78em;
     }
 }
 

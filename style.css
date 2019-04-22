@@ -75,7 +75,6 @@ width: 50%;
     padding: 2%;
     background-color: #a8d0e6;
     color: rgb(46, 44, 44);
-    /* border: black solid 1px; */
 }
 
 .showPlayerDisplay{
@@ -212,82 +211,34 @@ width: 50%;
 /*View for desktop*/
 @media (min-width:1000px) {
 
-    body{
-        background-color: #374785;
-    }
-
     .container{
-        width: 84%;
         height: 100vh;
-        margin: auto;
-        background-color: white;
-        padding: 3%
     }
 
     .aflTop50{
         width:820px;
-        margin: auto;
-        
     }
 
     #headline{
         font-size: 3.8em;
     }
 
-    .one{
-        width: 50%;
-        font-size: 8rem;
-    }
-
-
-    .twoFive{
-        width: 25%;
-        font-size: 4rem;
-    }
-
-
-    .sixTen{
-        width: 20%;
-        font-size: 3rem;
-    }
-
-    .elevenTwenty{
-        width: 10%;
-        font-size: 1rem;
-    }
-
-    .picText{
-        font-size: inherit;
-        /* transition: font-size 0.5.s ease-in-out;
-        -webkit-transition: font-size 0.5.s ease-in-out; */
-    }
-
-    /* .pictext:hover{
-        font-size: larger;
-        transition: font-size 0.5s ease-in-out;
-        -webkit-transition: font-size 0.5s ease-in-out;
-    } */
-
     #playerDisplay{
-        position: absolute;
-        top:0;
-        left: -820;
-        width: 95.5%;
-        height: 94%;
-        transition: 1.5s;
-        padding: 2%;
-        background-color: white;
-        border: black solid 1px;
-
+        height: 95%;
     }
 
-    #playerDisplay img{
-        width: 70%;
-        height: auto;
+    #rank{
+        font-size: 2.2em;
     }
 
-    #playerText{
-        float: right;
-        width: 27%;
+    #name{
+        font-size: 2.2em;
+    }
+    #team{
+        font-size: 1.8em;
+    }
+
+    #bio{
+        font-size: 1.08em;
     }
 }

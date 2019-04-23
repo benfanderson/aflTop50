@@ -91,17 +91,20 @@ width: 50%;
 }
 
 #playerText{
-    
     width: 100%;
 }
 
 #closeButton{
-    display: block;
-    position: relative;
-    left: 95%;
-    background-color: lightgray;
-    margin-bottom: 3%;
-}
+    position: absolute;
+    top:3%;
+    left: 82%;
+    background-color:#a8d0e6; 
+    border: none; 
+    color: white; 
+    padding: 8px 10px; 
+    font-size: 16px;
+    cursor: pointer;
+    }
 
  #rank {
     font-size: 1.7em;
@@ -189,15 +192,17 @@ width: 50%;
     #closebutton{
         position: absolute;
         top: 2%;
-        left: 97%;
+        left: 92%;
+        padding: 8px 12px;
+        background-color:#374785; 
     }
 
     #rank{
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     #name{
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     #team{
         font-size: 1.3em;
@@ -225,6 +230,12 @@ width: 50%;
 
     #playerDisplay{
         height: 95%;
+    }
+
+    #closebutton{
+        left: 93%;
+        font-size: 25px;
+        padding: 8px 12px; 
     }
 
     #rank{

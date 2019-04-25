@@ -69,11 +69,13 @@ width: 50%;
     position: absolute;
     top:0;
     left: -820;
-    width: 96%;
+    width: 93.5%;
     -webkit-transition: left 1.5s;
     transition: left 1.5s;
     padding: 2%;
-    background-color: #a8d0e6;
+    background-color: white;
+    border: 4px solid #374785;
+    /* background-color: #a8d0e6; */
     color: rgb(46, 44, 44);
 }
 
@@ -128,6 +130,7 @@ width: 50%;
 @media (min-width:479px) {
     body{
         background-color: #374785;
+        -webkit-text-size-adjust: none;
     }
 
     .container{
@@ -172,7 +175,8 @@ width: 50%;
     }
 
     #playerDisplay{
-        height: 425px;
+        height: 410px;
+        width: 94.5%;
     }
 
     #playerDisplay img{
@@ -198,11 +202,11 @@ width: 50%;
     }
 
     #rank{
-        font-size: 1.6em;
+        font-size: 2em;
     }
 
     #name{
-        font-size: 1.6em;
+        font-size: 2em;
     }
     #team{
         font-size: 1.3em;
@@ -229,7 +233,11 @@ width: 50%;
     }
 
     #playerDisplay{
-        height: 95%;
+        height: 93.2%;
+        width:95%
+    }
+    #playerDisplay img{
+        height: 96%;
     }
 
     #closebutton{
@@ -239,17 +247,17 @@ width: 50%;
     }
 
     #rank{
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     #name{
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
     #team{
         font-size: 1.8em;
     }
 
     #bio{
-        font-size: 1.08em;
+        font-size: 1em;
     }
 }

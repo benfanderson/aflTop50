@@ -68,7 +68,7 @@ width: 50%;
 #playerDisplay{
     position: absolute;
     top:0;
-    left: -820;
+    left: -100%;
     width: 93.5%;
     -webkit-transition: left 1.5s;
     transition: left 1.5s;
@@ -233,7 +233,8 @@ width: 50%;
     }
 
     .aflTop50{
-        width:820px;
+        /* width:820px; */
+        width: 88vh;
     }
 
     #headline{
@@ -267,6 +268,6 @@ width: 50%;
     }
 
     #bio{
-        font-size: 1.1gitem;
+        font-size: 1.1em;
     }
 }

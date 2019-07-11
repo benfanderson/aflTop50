@@ -164,7 +164,7 @@ window.onload= function() {
 
     let closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", function() {
-        document.getElementById("playerDisplay").style.left=-820;
+        document.getElementById("playerDisplay").style.left=-900;
     });
 
 

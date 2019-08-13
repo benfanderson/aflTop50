@@ -1,4 +1,4 @@
-window.onload= function() {
+window.onload = function() {
     const players = [
         {
             rank:1,
@@ -122,22 +122,23 @@ window.onload= function() {
         }
     ]
 
+    let pics = document.getElementsByClassName('pic');
 
+    for (let i = 0; i < pics.length; i++) {
 
-    let pics =document.getElementsByClassName("pic");
-
-    for (let i = 0; i< pics.length; i++) {
-        pics[i].addEventListener("click", function() {
+        pics[i].addEventListener('click', function(){
             document.getElementById("rank").innerHTML = players[i].rank+". ";
             document.getElementById("name").innerHTML = players[i].name;
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
 
             //Ensures playeDisplay panel slides in at top of viewheight in smartphone mode
-            
+    
             if(window.matchMedia("(max-width: 479px)")){
                 let headline = document.getElementById("headline");
                 let headlineOffset = headline.offsetHeight;
+                console.log(window.pageYOffset);
+                console.log(headline.offsetHeight);
                 headlineOffset += parseInt(window.getComputedStyle(headline).getPropertyValue('margin-bottom'));
                 if(window.pageYOffset>headlineOffset){
                     document.getElementById("playerDisplay").style.top=pageYOffset-headlineOffset;
@@ -147,26 +148,26 @@ window.onload= function() {
             }
 
             document.getElementById("playerDisplay").style.left=0;
-        });  
+        })
 
         if(window.matchMedia("(min-width: 1000px)").matches) {
             pics[i].addEventListener("mouseover", function(){
-                this.nextElementSibling.style.fontSize="150%";
+            this.nextElementSibling.style.fontSize="150%";
             });
-    
+
             pics[i].addEventListener("mouseout", function(){
                 this.nextElementSibling.style.fontSize="100%";
             });
         }
-
         
     }
 
     let closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", function() {
-        document.getElementById("playerDisplay").style.left=-820;
-    });
-
-
-
+        if(window.matchMedia("(min-width: 1000px)").matches) {
+            document.getElementById("playerDisplay").style.left=-1450;
+        } else {
+            document.getElementById("playerDisplay").style.left=-820;
+        }
+    });    
 }

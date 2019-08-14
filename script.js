@@ -132,6 +132,7 @@ window.onload = function() {
 
     for (let i = 0; i < pics.length; i++) {
 
+         //Adds relevant player info to playerDisplay panel
         pics[i].addEventListener('click', function(){
             document.getElementById("rank").innerHTML = players[i].rank+". ";
             document.getElementById("name").innerHTML = players[i].name;
@@ -158,18 +159,22 @@ window.onload = function() {
                 } else {
                     document.getElementById("playerDisplay").style.top=0;
                 }
-            }
-
+            } 
+            
             document.getElementById("playerDisplay").style.left=0;
-
+            
+            //Reveals clicked-on player's picture and remove's number once playerDisplay panel slides into view
             setTimeout(function(){
                     if(i<=4) {
                         document.getElementsByClassName('pic')[i].src = "images/"+players[i].pic+".jpg";
                     } else {
                         document.getElementsByClassName('pic')[i].src="images/player.jpg" 
                     }
+                    document.getElementsByClassName('picText')[i].innerHTML="";
                 }, 1500
             );
+
+            
         })
 
         if(window.matchMedia("(min-width: 1000px)").matches) {

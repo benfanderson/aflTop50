@@ -4,31 +4,37 @@ window.onload = function() {
             rank:1,
             name:"Dustin Martin",
             team:"Richmond",
-            bio:"He started the season bound for the same sort of impact he had in 2017 when he won the Brownlow and the Norm Smith medals and Richmond won the flag, but a knee problem slowed him considerably towards the end of the season and he barely kicked the ball in the preliminary final loss to Collingwood. But he still went at better than 25 disposals per game and he kicked 31 goals. When you sit down to compare “the big three” it is quality of disposal that gives “Dusty” the edge at the moment. He is an elite kick. It makes him that little bit more dangerous around goals and it makes him a bigger help to teammates in better scoring positions than him."
+            bio:"He started the season bound for the same sort of impact he had in 2017 when he won the Brownlow and the Norm Smith medals and Richmond won the flag, but a knee problem slowed him considerably towards the end of the season and he barely kicked the ball in the preliminary final loss to Collingwood. But he still went at better than 25 disposals per game and he kicked 31 goals. When you sit down to compare “the big three” it is quality of disposal that gives “Dusty” the edge at the moment. He is an elite kick. It makes him that little bit more dangerous around goals and it makes him a bigger help to teammates in better scoring positions than him.",
+            pic: "martin"
         },
         {
             rank:2,
             name:"Patrick Dangerfield",
             team:"Geelong",
-            bio:"It is incredible to think he has already played 70 games for the Cats after crossing from Adelaide. His numbers were still very good in 2018 - he averaged more than 28 disposals per game and kicked 24 goals but he wasn’t quite at the dizzy levels he hit in 2017 when he went at 30 touches and kicked 45 goals in a mix of roles between midfield and attack. He still has a great balance to his game. He wins clearances five times a match, takes it in side attacking fifty five times and he dipped below 20 disposals in a game just once in 22 matches last year."
+            bio:"It is incredible to think he has already played 70 games for the Cats after crossing from Adelaide. His numbers were still very good in 2018 - he averaged more than 28 disposals per game and kicked 24 goals but he wasn’t quite at the dizzy levels he hit in 2017 when he went at 30 touches and kicked 45 goals in a mix of roles between midfield and attack. He still has a great balance to his game. He wins clearances five times a match, takes it in side attacking fifty five times and he dipped below 20 disposals in a game just once in 22 matches last year.",
+            pic: "dangerfield"
         },
         {
             rank:3,
             name:"Nat Fyfe",
             team:"Fremantle",
-            bio:"There were times last year when he looked every bit the dominant force of the 2014 and 2015 seasons. You wouldn’t like to be the midfielder matched up on him in the centre this season without the ability to get help from defenders coming from the back of the square. The scary thing about Fyfe for opposition coaches is that of the big three at the top of this list he is the one with the most upside. He averaged nearly 30 disposals per game last year with seven clearances and 11 goals. Imagine if he dropped his disposal rate to about 25 but went forward more and kicked 30 goals. With the new rules he would be close to unstoppable."
+            bio:"There were times last year when he looked every bit the dominant force of the 2014 and 2015 seasons. You wouldn’t like to be the midfielder matched up on him in the centre this season without the ability to get help from defenders coming from the back of the square. The scary thing about Fyfe for opposition coaches is that of the big three at the top of this list he is the one with the most upside. He averaged nearly 30 disposals per game last year with seven clearances and 11 goals. Imagine if he dropped his disposal rate to about 25 but went forward more and kicked 30 goals. With the new rules he would be close to unstoppable.",
+            pic: "fyfe"
         },
         {
             rank:4,
             name: "Lance Franklin",
             team:"Sydney",
-            bio:"He starts the sixth year of his mammoth Swans contract as a 32-year-old but he also starts it as still the game’s biggest star and still alongside Jack Riewoldt and Josh Kennedy (Eagles) as one of its most potent forwards. He battled to train in 2018 because of a sore heel but he still kicked 57 goals in 19 games including that incredible eight goal haul against West Coast in round one when he literally decided the outcome. If he stays fit he is still capable of a 60-70 goal season."
+            bio:"He starts the sixth year of his mammoth Swans contract as a 32-year-old but he also starts it as still the game’s biggest star and still alongside Jack Riewoldt and Josh Kennedy (Eagles) as one of its most potent forwards. He battled to train in 2018 because of a sore heel but he still kicked 57 goals in 19 games including that incredible eight goal haul against West Coast in round one when he literally decided the outcome. If he stays fit he is still capable of a 60-70 goal season.",
+            pic: "franklin"
+
         },
         {
             rank:5,
             name: "Patrick Cripps",
             team: "Carlton",
-            bio:"Has any 23-year-old been asked to do more in his first 80 games of AFL football than Paddy Cripps? Carlton’s dearth of marquee players has meant the youngster has had to carry a mighty load. Luckily his 195cm, 93kg frame is built for work. Imagine that: A 195cm midfielder. That is bigger than Nick Riewoldt, Jonathan Brown and Matthew Pavlich and they were the three pre-eminent power forwards of the generation just gone. He averaged 29.5 disposals per game in 2018 and polled 20 Brownlow votes in a team that won just two of 22 games. He polled in half the games and was rated best on ground in both the Blues’ wins."
+            bio:"Has any 23-year-old been asked to do more in his first 80 games of AFL football than Paddy Cripps? Carlton’s dearth of marquee players has meant the youngster has had to carry a mighty load. Luckily his 195cm, 93kg frame is built for work. Imagine that: A 195cm midfielder. That is bigger than Nick Riewoldt, Jonathan Brown and Matthew Pavlich and they were the three pre-eminent power forwards of the generation just gone. He averaged 29.5 disposals per game in 2018 and polled 20 Brownlow votes in a team that won just two of 22 games. He polled in half the games and was rated best on ground in both the Blues’ wins.",
+            pic: 'cripps'
         },
         {
             rank:6,
@@ -132,6 +138,13 @@ window.onload = function() {
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
 
+            if(i<=4){
+                document.getElementById('playerPic').src="images/"+players[i].pic+".jpg";
+            } else{
+                document.getElementById('playerPic').src="images/player.jpg"
+            }
+        
+
             //Ensures playeDisplay panel slides in at top of viewheight in smartphone mode
     
             if(window.matchMedia("(max-width: 479px)")){
@@ -148,6 +161,15 @@ window.onload = function() {
             }
 
             document.getElementById("playerDisplay").style.left=0;
+
+            setTimeout(function(){
+                    if(i<=4) {
+                        document.getElementsByClassName('pic')[i].src = "images/"+players[i].pic+".jpg";
+                    } else {
+                        document.getElementsByClassName('pic')[i].src="images/player.jpg" 
+                    }
+                }, 1500
+            );
         })
 
         if(window.matchMedia("(min-width: 1000px)").matches) {

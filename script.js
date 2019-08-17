@@ -34,32 +34,38 @@ window.onload = function() {
         {
             name:"Jeremy McGovern",
             team: "West Coast",
-            bio:"We are all still talking about Dom Sheed finishing the match-winning play in the grand final against Collingwood but it took McGovern to start it. It was typical McGovern - the swagger to attack a contest and take a hanger, the game sense to play on and move the ball and the skill to pick out Nathan Vardy in a dangerous position midfield, all done with cracked ribs. Superb reader of the play, a great mark and a very good user of the ball either short or long. The Eagles won without Gaff, Naitanui and Sheppard last year but you wouldn’t back them to go back-to-back without McGovern."
+            bio:"We are all still talking about Dom Sheed finishing the match-winning play in the grand final against Collingwood but it took McGovern to start it. It was typical McGovern - the swagger to attack a contest and take a hanger, the game sense to play on and move the ball and the skill to pick out Nathan Vardy in a dangerous position midfield, all done with cracked ribs. Superb reader of the play, a great mark and a very good user of the ball either short or long. The Eagles won without Gaff, Naitanui and Sheppard last year but you wouldn’t back them to go back-to-back without McGovern.",
+            pic:"mcgovern"
         },
         {
             name:"Josh Kelly",
             team: "GWS",
-            bio:"As close as this competition has to a midfield Rolls Royce. He was injury affected for much of the season, missing a seven game stretch between rounds three and 10 when hampered by a groin problem, then absent when the Giants lost to Collingwood in a semi final because of a knee problem suffered early in the GWS win over Sydney in their elimination final. But he still went at better than 26 disposals per game when he played and kicked two goals four times. Elite runner, elite ball user, elite game sense. In a word: Elite."
+            bio:"As close as this competition has to a midfield Rolls Royce. He was injury affected for much of the season, missing a seven game stretch between rounds three and 10 when hampered by a groin problem, then absent when the Giants lost to Collingwood in a semi final because of a knee problem suffered early in the GWS win over Sydney in their elimination final. But he still went at better than 26 disposals per game when he played and kicked two goals four times. Elite runner, elite ball user, elite game sense. In a word: Elite.",
+            pic:'kelly'
         },
         {
             name:"Max Gawn",
             team:"Melbourne",
-            bio:"The ruck giant just shaded Grundy for status as the best ruckman in the AFL last year. He averaged just shy of 16 disposals per game and had a whopping 1119 hit outs at better than 44 per game. Some of his taps to his midfield’s advantage were absolutely gold to Clayton Oliver, Angus Brayshaw and co. He also kicked goals in 11 of Melbourne’s 25 games. At 208cm he is just three cm shorter than Aaron Sandilands but like the giant Docker is a great runner. He gets to very good attacking and defensive positions and was often the intercept marker in defence for the Dees in their break out year."
+            bio:"The ruck giant just shaded Grundy for status as the best ruckman in the AFL last year. He averaged just shy of 16 disposals per game and had a whopping 1119 hit outs at better than 44 per game. Some of his taps to his midfield’s advantage were absolutely gold to Clayton Oliver, Angus Brayshaw and co. He also kicked goals in 11 of Melbourne’s 25 games. At 208cm he is just three cm shorter than Aaron Sandilands but like the giant Docker is a great runner. He gets to very good attacking and defensive positions and was often the intercept marker in defence for the Dees in their break out year.",
+            pic:'gawn'
         },
         {
             name:"Alex Rance",
             team:"Richmond",
-            bio:"He will be one of the more intriguing players to watch under the new rules in 2019 because we are still not sure how many quick and clean entries to attacking fifty teams will be able to get from centre stoppages and how that will affect the league’s great “help” defenders. Rance is one shy of the 200 game milestone now and remains one of the game’s absolutely elite backmen, confident in getting to the “next” contest up the ground, provide the outnumber there and stop the ball from reaching his own man."
+            bio:"He will be one of the more intriguing players to watch under the new rules in 2019 because we are still not sure how many quick and clean entries to attacking fifty teams will be able to get from centre stoppages and how that will affect the league’s great “help” defenders. Rance is one shy of the 200 game milestone now and remains one of the game’s absolutely elite backmen, confident in getting to the “next” contest up the ground, provide the outnumber there and stop the ball from reaching his own man.",
+            pic:'rance'
         },
         {
             name:"Brodie Grundy",
             team:"Collingwood",
-            bio:"Tied with Steele Sidebottom for the Copeland Trophy as the Magpies best and fairest winner in a grand final year. He is now 24 years old and is probably the nearest thing we have seen to Dean Cox since Cox himself. He averaged 20 disposals per game in 2018, took the ball inside fifty three times a game, laid five tackles a game, won five clearances for himself per game and kicked nine goals. He had 20 or more disposals in 15 of 26 games, peaking at 33 in round four against Adelaide. West Coast’s ability to limit him to 10 disposals in the grand final was a key to their premiership."
+            bio:"Tied with Steele Sidebottom for the Copeland Trophy as the Magpies best and fairest winner in a grand final year. He is now 24 years old and is probably the nearest thing we have seen to Dean Cox since Cox himself. He averaged 20 disposals per game in 2018, took the ball inside fifty three times a game, laid five tackles a game, won five clearances for himself per game and kicked nine goals. He had 20 or more disposals in 15 of 26 games, peaking at 33 in round four against Adelaide. West Coast’s ability to limit him to 10 disposals in the grand final was a key to their premiership.",
+            pic:'grundy'
         },
         {
             name:"Clayton Oliver",
             team: "Melbounrne",
-            bio: "You might want to put a bullet next to this bloke’s name as he could be considerably higher next year. Finished second in Melbourne’s best and fairest behind Max Gawn and you can safely assume to see Gawn’s name further up the ladder here. He did everything you expect gun midfielders to do in 2018. He averaged 29 disposals per game, won about 16 of them in contests, laid six tackles a match and won 6.5 clearances. He kicked 12 goals and he did all of this in his third AFL season in the year he turned 21. Wow."
+            bio: "You might want to put a bullet next to this bloke’s name as he could be considerably higher next year. Finished second in Melbourne’s best and fairest behind Max Gawn and you can safely assume to see Gawn’s name further up the ladder here. He did everything you expect gun midfielders to do in 2018. He averaged 29 disposals per game, won about 16 of them in contests, laid six tackles a match and won 6.5 clearances. He kicked 12 goals and he did all of this in his third AFL season in the year he turned 21. Wow.",
+            pic:'oliver'
         },
         {
             name:"Jack Riewoldt",
@@ -114,6 +120,12 @@ window.onload = function() {
 
         document.getElementsByClassName('picText')[i].innerHTML=(i+1);
 
+        if(i<=9){
+            pics[i].src="images/"+players[i].pic+"blur.jpg";
+        } else{
+            pics[i].src="images/player.jpg"
+        }
+
          //Adds relevant player info to playerDisplay panel
         pics[i].addEventListener('click', function(){
             document.getElementById("rank").innerHTML = (i+1)+". ";
@@ -121,7 +133,7 @@ window.onload = function() {
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
 
-            if(i<=4){
+            if(i<=9){
                 document.getElementById('playerPic').src="images/"+players[i].pic+".jpg";
             } else{
                 document.getElementById('playerPic').src="images/player.jpg"
@@ -147,7 +159,7 @@ window.onload = function() {
             
             //Reveals clicked-on player's picture and remove's number once playerDisplay panel slides into view
             setTimeout(function(){
-                    if(i<=4) {
+                    if(i<=9) {
                         document.getElementsByClassName('pic')[i].src = "images/"+players[i].pic+".jpg";
                     } else {
                         document.getElementsByClassName('pic')[i].src="images/player.jpg" 

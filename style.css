@@ -94,7 +94,8 @@
     top: 52%;
     left: 55%;
     transform: translate(-50%, -50%);
-    color: #374785;
+    color: white;
+    text-shadow: 2px 2px #374785;
     font-size: 3.5rem;
     transition: 0.75s ease-in-out;
     -webkit-transition: 0.75s ease-in-out;
@@ -177,7 +178,7 @@
     }
 
     #pic1{
-        font-size: 8rem;    
+        font-size: 15rem;    
         grid-column-start: 1;
         grid-column-end: 11;
         grid-row-start: 1;
@@ -185,7 +186,7 @@
     }
 
     #pic2{
-        font-size: 4rem;
+        font-size: 7rem;
         grid-column-start: 11;
         grid-column-end: 16;
         grid-row-start: 1;
@@ -193,7 +194,7 @@
     }
 
     #pic3{
-        font-size: 4rem;
+        font-size: 7rem;
         grid-column-start: 16;
         grid-column-end: 21;
         grid-row-start: 1;
@@ -201,7 +202,7 @@
     }
 
     #pic4{
-        font-size: 4rem;
+        font-size: 7rem;
         grid-column-start: 11;
         grid-column-end: 16;
         grid-row-start: 6;
@@ -209,7 +210,7 @@
     }
 
     #pic5{
-        font-size: 4rem;
+        font-size: 7rem;
         grid-column-start: 16;
         grid-column-end: 21;
         grid-row-start: 6;
@@ -217,7 +218,7 @@
     }
 
     #pic6{
-        font-size: 3rem;
+        font-size: 4rem;
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 11;
@@ -225,7 +226,7 @@
     }
 
     #pic7{
-        font-size: 3rem;
+        font-size: 4rem;
         grid-column-start: 5;
         grid-column-end: 9;
         grid-row-start: 11;
@@ -233,7 +234,7 @@
     }
 
     #pic8{
-        font-size: 3rem;
+        font-size: 4rem;
         grid-column-start: 9;
         grid-column-end: 13;
         grid-row-start: 11;
@@ -241,7 +242,7 @@
     }
 
     #pic9{
-        font-size: 3rem;
+        font-size: 4rem;
         grid-column-start: 13;
         grid-column-end: 17;
         grid-row-start: 11;
@@ -249,7 +250,7 @@
     }
 
     #pic10{
-        font-size: 3rem;
+        font-size: 4rem;
         grid-column-start: 17;
         grid-column-end: 21;
         grid-row-start: 11;

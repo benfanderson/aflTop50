@@ -70,22 +70,26 @@ window.onload = function() {
         {
             name:"Jack Riewoldt",
             team:"Richmond",
-            bio:"Kicked 70 goals in 2018 to take his career tally past 600. Riewoldt has dipped below 50 goals just once in nine seasons and that was in 2016 when the Tigers won only eight games and he still managed 48. The 70 goals don’t do justice to the season he had. He was the Tigers’ sole tall target much of the time and had to either mark it or get it on the deck for the crumbers to get to work. The five goals he kicked against in a pummelling from West Coast in Perth were evidence of what a great player he has become."
+            bio:"Kicked 70 goals in 2018 to take his career tally past 600. Riewoldt has dipped below 50 goals just once in nine seasons and that was in 2016 when the Tigers won only eight games and he still managed 48. The 70 goals don’t do justice to the season he had. He was the Tigers’ sole tall target much of the time and had to either mark it or get it on the deck for the crumbers to get to work. The five goals he kicked against in a pummelling from West Coast in Perth were evidence of what a great player he has become.",
+            pic:'riewoldt'
         },
         {
             name:"Phil Davis",
             team:"GWS",
-            bio:"He has been the primary power defender in a team that has played finals in each of the past three seasons. The modern defender often gets a lot of help from teammates, but the Giants regularly trade on Davis’ ability to cope one-on-one and isolated with the likes of Lance Franklin, Josh Kennedy and others. He is a great body player. He has that knack most great defenders have of being able to keep the forward off balance without conceding free kicks. He won 41 free kicks last year and conceded less than one per game."
+            bio:"He has been the primary power defender in a team that has played finals in each of the past three seasons. The modern defender often gets a lot of help from teammates, but the Giants regularly trade on Davis’ ability to cope one-on-one and isolated with the likes of Lance Franklin, Josh Kennedy and others. He is a great body player. He has that knack most great defenders have of being able to keep the forward off balance without conceding free kicks. He won 41 free kicks last year and conceded less than one per game.",
+            pic:'davis'
         },
         {
             name:"Elliot Yeo",
             team: "West Coast",
-            bio:"You are going all right when you win your second club best and fairest in a premiership year. I think all of the Eagles’ midfielders are underrated, but Yeo perhaps most of all. He averaged 25 disposals per game in 2018, kicking 14 goals, laying seven tackles a match and winning 12 contested possessions. He can play midfield or half-back, kicks well off either foot and can be used in attacking or defensive midfield roles. Is often the one sent to quell the likes of Nat Fyfe, Dustin Martin, Dangerfield and Toby Greene."
+            bio:"You are going all right when you win your second club best and fairest in a premiership year. I think all of the Eagles’ midfielders are underrated, but Yeo perhaps most of all. He averaged 25 disposals per game in 2018, kicking 14 goals, laying seven tackles a match and winning 12 contested possessions. He can play midfield or half-back, kicks well off either foot and can be used in attacking or defensive midfield roles. Is often the one sent to quell the likes of Nat Fyfe, Dustin Martin, Dangerfield and Toby Greene.",
+            pic:'Yeo'
         },
         {
             name:"Rory Sloane",
             team:"Adelaide",
-            bio:"Injury cut his season in half in 2018 and trimmed his output by about the same percentage. But when he did play the Crows defied an otherwise bleak season to win seven of 12 games. A heart-and-soul midfielder who was still winning a powerful 13 contested possessions and six clearances per game, even in a season pulled apart by injury. He handles the pressure of being the club’s primary midfielder in the post-Patrick Dangerfield era very well and at his best he hits the scoreboard as well."
+            bio:"Injury cut his season in half in 2018 and trimmed his output by about the same percentage. But when he did play the Crows defied an otherwise bleak season to win seven of 12 games. A heart-and-soul midfielder who was still winning a powerful 13 contested possessions and six clearances per game, even in a season pulled apart by injury. He handles the pressure of being the club’s primary midfielder in the post-Patrick Dangerfield era very well and at his best he hits the scoreboard as well.",
+            pic:'Sloane'
         },
         {
             name: "Steele Sidebottom",
@@ -120,7 +124,7 @@ window.onload = function() {
 
         document.getElementsByClassName('picText')[i].innerHTML=(i+1);
 
-        if(i<=9){
+        if(i<=14){
             pics[i].src="images/"+players[i].pic+"blur.jpg";
         } else{
             pics[i].src="images/player.jpg"
@@ -133,7 +137,7 @@ window.onload = function() {
             document.getElementById("team").innerHTML = players[i].team;
             document.getElementById("bio").innerHTML = players[i].bio;
 
-            if(i<=9){
+            if(i<=14){
                 document.getElementById('playerPic').src="images/"+players[i].pic+".jpg";
             } else{
                 document.getElementById('playerPic').src="images/player.jpg"
@@ -159,7 +163,7 @@ window.onload = function() {
             
             //Reveals clicked-on player's picture and remove's number once playerDisplay panel slides into view
             setTimeout(function(){
-                    if(i<=9) {
+                    if(i<=14) {
                         document.getElementsByClassName('pic')[i].src = "images/"+players[i].pic+".jpg";
                     } else {
                         document.getElementsByClassName('pic')[i].src="images/player.jpg" 

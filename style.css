@@ -21,7 +21,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 45vw);
     grid-gap: 1.5vw;
-    /* overflow: hidden; */
     position: relative;
 }
 

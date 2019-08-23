@@ -83,13 +83,13 @@ window.onload = function() {
             name:"Elliot Yeo",
             team: "West Coast",
             bio:"You are going all right when you win your second club best and fairest in a premiership year. I think all of the Eagles’ midfielders are underrated, but Yeo perhaps most of all. He averaged 25 disposals per game in 2018, kicking 14 goals, laying seven tackles a match and winning 12 contested possessions. He can play midfield or half-back, kicks well off either foot and can be used in attacking or defensive midfield roles. Is often the one sent to quell the likes of Nat Fyfe, Dustin Martin, Dangerfield and Toby Greene.",
-            pic:'Yeo'
+            pic:'yeo'
         },
         {
             name:"Rory Sloane",
             team:"Adelaide",
             bio:"Injury cut his season in half in 2018 and trimmed his output by about the same percentage. But when he did play the Crows defied an otherwise bleak season to win seven of 12 games. A heart-and-soul midfielder who was still winning a powerful 13 contested possessions and six clearances per game, even in a season pulled apart by injury. He handles the pressure of being the club’s primary midfielder in the post-Patrick Dangerfield era very well and at his best he hits the scoreboard as well.",
-            pic:'Sloane'
+            pic:'sloane'
         },
         {
             name: "Steele Sidebottom",

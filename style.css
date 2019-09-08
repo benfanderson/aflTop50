@@ -8,6 +8,13 @@
     width: 96%;
     margin: 2%;;
 }
+
+#masthead{
+    width:100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
 #headline{
     font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
@@ -161,13 +168,18 @@
     body{
         -webkit-text-size-adjust: none;
     }
+
+    .container{
+        padding: 2%;
+    }
+
     .content-container{
         width: 80%;
         margin: auto;
     }
 
     #headline{
-        font-size: 3em;
+        font-size: 2.8em;
     }
 
     .grid-container {

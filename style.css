@@ -36,6 +36,7 @@
 .picContainer{
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 #pic1{
